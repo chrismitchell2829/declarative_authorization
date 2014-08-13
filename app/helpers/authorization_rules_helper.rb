@@ -44,7 +44,7 @@ module AuthorizationRulesHelper
     link_to_function title, "$$('object')[0].data = '#{url_for :action => 'index', :format => 'svg', :type => type}'"
   end
 
-  def navigation
+  def declarative_authorization_navigation
     link_to("Rules", authorization_rules_path) << ' | ' <<
     link_to("Change Support", change_authorization_rules_path) << ' | ' <<
     link_to("Graphical view", graph_authorization_rules_path) << ' | ' <<
